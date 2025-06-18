@@ -4,15 +4,15 @@
 //
 //  Created by Michelle Zhang on 2025-06-17.
 //
-
 import SwiftUI
 
-@main struct
-focusdockApp: App {
+@main
+struct focusdockApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         Settings {
-            Text("Settings or main app window")
+            EmptyView()  // No visible window
         }
     }
 }
