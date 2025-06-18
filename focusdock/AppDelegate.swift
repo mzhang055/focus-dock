@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
         if let button = statusBarItem?.button {
-            button.title = "Open Window"
+            button.image = NSImage(systemSymbolName: "leaf.fill", accessibilityDescription: "FocusDock Icon")
             button.action = #selector(statusBarButtonClicked(_:))
             button.target = self
         }
