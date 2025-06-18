@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-sdfds
+
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarItem: NSStatusItem?
 
