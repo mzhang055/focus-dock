@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-@main
-struct focusdockApp: App {
+@main struct
+focusdockApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            Text("Settings or main app window")
         }
     }
 }
