@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         // Set the popover content to a SwiftUI view
-        let popoverView = PopoverView()
+        let popoverView = FocusDockView()
         let hostingController = NSHostingController(rootView: popoverView)
         popover.contentViewController = hostingController
         popover.behavior = .transient
